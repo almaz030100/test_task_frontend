@@ -1,0 +1,17 @@
+.btn {
+    max-width: 100%;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    background: #fff;
+    transition: 0.5s all;
+    &:hover {
+        background: #75FF72;
+        border-color: #75FF72;
+    }
+    &:active {
+        background: #67e065;
+        border-color: #67e065;
+        transition: none;
+    }
+}

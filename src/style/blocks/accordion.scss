@@ -1,0 +1,40 @@
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: int(20,30);
+    .divider {
+        height: 1px;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.2);
+    }
+    &__title {
+        font-size: int(17,24);
+        line-height: 1.5;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        img {
+            width: int(30,50);
+            transition: 0.5s all;
+            flex-shrink: 0;
+        }
+        &_active {
+            img {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    &__content {
+        font-size: int(14,16);
+        margin-top: 0px;
+        line-height: 1.5;
+        max-height: 0px;
+        overflow: hidden;
+        transition: 0.5s all;
+        &_active {
+            margin-top: int(20,30);
+        }
+    }
+}

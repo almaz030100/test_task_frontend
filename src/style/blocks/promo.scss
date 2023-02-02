@@ -1,0 +1,55 @@
+.promo {
+    background: $black;
+    .splide__track {
+        overflow: visible;
+    }
+    .splide__arrows {
+        margin-top: int(35,70);
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        justify-content: center;
+    }
+    .splide__arrow {
+        position: initial;
+        background: initial;
+        height: initial;
+        width: initial;
+        border-radius: initial;
+        transform: initial;
+        opacity: initial;
+        svg path {
+            transition: 0.3s all;
+        }
+        &:hover {
+            opacity: initial;
+            svg path {
+                fill: #75FF77;
+            }
+        }
+        &--prev {
+            transform: scaleX(-1);
+        }
+        svg {
+            width: initial;
+            height: initial;
+        }
+    }
+    .splide__slide {
+        height: int(450,650);
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        span {
+            position: absolute;
+            font-weight: 500;
+            font-size: int(40,80);
+            line-height: 80px;
+            left: int(20,50);
+            bottom: 159px;
+            color: #fff;
+        }
+    }
+}

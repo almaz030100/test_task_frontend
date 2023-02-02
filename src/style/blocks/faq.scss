@@ -1,0 +1,19 @@
+.faq {
+    padding-top: int(80,150);
+    background: $black;
+    color: #fff;
+    &__wrapper {
+        display: flex;
+        gap: 98px;
+    }
+    &__right {
+        flex-grow: 1;
+    }
+}
+
+@media (max-width: 991px) {
+    .faq__wrapper {
+        flex-direction: column;
+        gap: int(20,70);
+    }
+}

@@ -1,0 +1,28 @@
+.form {
+    input {
+        height: 50px;
+        border: none;
+        outline: 1px solid rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        line-height: 1.25;
+        padding: 0 20px;
+        &::placeholder {
+            font-size: 14px;
+            line-height: 1.43;
+            color: rgba(0, 0, 0, 0.6);
+        }
+        &:focus-visible {
+            outline: 2px solid #000;
+        }
+    }
+}
+
+label.error {
+    display: none !important;
+}
+input.error {
+    outline-color: red;
+    &:focus-visible {
+        outline-color: red;
+    }
+}
